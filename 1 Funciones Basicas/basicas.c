@@ -1,7 +1,6 @@
 #include "basicas.h"
 
 
-
 // recursion - potencia con base y exp - implicita
 int potenciaRecursionImplicita(int base,int exp)
 {
@@ -40,7 +39,6 @@ int factorialRecursionImplicita(int num)
     }
     return rta;
 }
-
 
 
 // recursion - factorial - implicita
@@ -92,6 +90,7 @@ void intDivisores(int num)
     }
 }
 
+
 // int - mayor de 3 parametros int
 void intMayorDe3(int num1, int num2, int num3)
 {
@@ -116,8 +115,6 @@ int intEsPar(int num)
 }
 
 
-
-
 // int - intercambiar 2 valores por puntero
 void intIntercambiar(int *a,int *b)
 {
@@ -140,13 +137,11 @@ int validarEdad(int edad)
 }
 
 
-
 // int - random entre MIN y MAX
 int intRandomEntreMinYMax(int min, int max)
 {
     return rand() % (max + 1 - min) + min; //incluye al min y max
 }
-
 
 
 // int - random del 0 al 9
@@ -170,15 +165,11 @@ int intRandom0A999()
 }
 
 
-
-
-
 // int - cambio de signo
 int intCambiarSigno(int num)
 {
     return num *= -1;
 }
-
 
 
 // float - random decimal - 0<x<1
@@ -187,7 +178,6 @@ float floatRandomDecimal()
     float decimal = (float)(rand() % 100) / 100;
     return decimal;
 }
-
 
 
 // float - random entero + decimal - 0<x<100
@@ -200,8 +190,6 @@ float floatRandomEnteroYDecimal()
 }
 
 
-
-
 // char - letra random
 char charRandom()
 {
@@ -209,7 +197,6 @@ char charRandom()
     int cantLetras  = sizeof(letras)/sizeof(char);
     return letras[rand()%cantLetras];
 }
-
 
 
 void pruebaBasicas()
